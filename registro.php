@@ -14,6 +14,6 @@ include_once'conexion.php';
 	$message = "Se ha registrado exitosamente";
 	echo "<script type='text/javascript'>
 	alert('$message');
-	location='loginUsuario.html';
+	location='loginUsuario.php';
 	</script>";
 ?>

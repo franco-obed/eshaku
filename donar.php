@@ -1,5 +1,7 @@
 <?php
   include_once 'conexion.php'; 
+  $e_mail= $_SESSION['user'];
+  $contra= $_SESSION['pass'];
 
 
   $formatos = array('.jpg', '.png');
@@ -9,6 +11,7 @@
   	$ext = substr($nombreArchivo, strrpos($nombreArchivo, '.'));
   	if (in_array($ext, $formatos)){
   		if (move_uploaded_file($nombreTmpArchivo, "archivos/$nombreArchivo")){
+  			mysqli_query($conexion, "INSERT INTO prenda (foto) VALUES ('$nombreArchivo');");
   			echo "<script type='text/javascript'>
 			alert('Se ha subido exitosamente, ahora, introduzca la informacion de la prenda');
 			</script>";
@@ -75,33 +78,38 @@
 			<div class="cajon2">
 				<select name="tipo">
 					<option value="" disabled selected="">.. SELECCIONE PRENDA</option>
-					<option value="#">zapatos</option>
-					<option value="#">playera</option>
-					<option value="#">camisa</option>
-					<option value="#">uniforme</option>
-					<option value="#">abrigo</option>
-					<option value="#">pantalonera</option>
-					<option value="#">pantalon</option>
-					<option value="#">tenis</option>
+					<option value="zapatos">zapatos</option>
+					<option value="playera">playera</option>
+					<option value="camisa">camisa</option>
+					<option value="uniforme">uniforme</option>
+					<option value="abrigo">abrigo</option>
+					<option value="pantalonera">pantalonera</option>
+					<option value="pantalon">pantalon</option>
+					<option value="tenis">tenis</option>
 					
 				</select>
 
 			    <br>
 			    <select name="genero">
 					<option value="" disabled selected="">.. SELECCIONE GENERO</option>
-					<option value="#">Hombre</option>
-					<option value="#">Mujer</option>
-					<option value="#">Nin@s</option>
+					<option value="hombre">Hombre</option>
+					<option value="mujer">Mujer</option>
+					<option value="ninos">Nin@s</option>
 				</select>
 			    <br>
-			    <input type="text" placeholder="Estado de la prenda" name="#">
+			    <select name="estado">
+			    	<option value="" disabled selected= "">.. SELECCIONE ESTADO EN EL QUE ESTA LA PRENDA</option>
+			    	<option value="usada">Usada</option>
+			    	<option value="nueva">Nueva</option>
+			    </select>
 			    <br>
 			    <select name="talla">
 			    		<option value="" disabled selected="">.. SELECCIONE TALLA</option>
-			    		<option value="#">Pequeña </option>
-			    		<option value="#">Mediana </option>
-			    		<option value="#">Grande </option>
-			    		<option value="#">Extra Grande </option>
+			    		<option value="pequena">Pequeña </option>
+			    		<option value="mediana">Mediana </option>
+			    		<option value="grande">Grande </option>
+			    		<option value="extra grande">Extra Grande </option>
+			    </select>
 			    <br>
 			    <input type="submit" name="submit1" value="Enviar" onclick="return display()">
 				
