@@ -38,8 +38,8 @@
 	<nav class="nav">
 		<img src="encabezado.png" width="350" height="85">
 			<ul id="menu">
-				<li><a href="INDEX.html"><h3>Inicio</h3></a></li>
-				<li><a href=""><h3>Usuario</h3></a></li>
+				<li><a href="INDEX.php"><h3>Inicio</h3></a></li>
+				<li><a href="usuario.php"><h3>Usuario</h3></a></li>
 				<li><a href=""><h3>Cerrar Sesion</h3></a></li>
 			</ul>
 		
@@ -70,7 +70,7 @@
 		<br>
 
 
-		<form id="form2" method="POST" onsubmit="return display()" action="post">
+		<form id="form2" method="POST" onsubmit="return display()" action="post_prenda.php">
 			<center><h2 id="encabezado">Tipo de prenda</h2></center>
 			<div class="cajon2">
 				<select name="tipo">

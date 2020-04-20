@@ -82,7 +82,7 @@
 				<center><input id="buscador" type="search" placeholder="Buscar aqui">
 				<a href="#" id="button">Buscar</a> ¿Que estas buscando?
 
-				 <a href="donarPag.php" class="button">Donar</a></center>    
+				 <a href="donar.php" class="button">Donar</a></center>    
 			</div>
 
 			<div id="imagen1">
