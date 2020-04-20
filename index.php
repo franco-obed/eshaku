@@ -68,9 +68,9 @@
 		<div id="cajon3">
 			<ul id="menu">
 				<li><a href="#"><h2>Inicio</h2></a></li>
-				<li><a href="USUARIO.html"><h2>Usuario</h2></a></li>
-				<li><a href="loginUsuario.html"><h2>inicio sesion</h2></a></li>
-				<li><a href="registroUsuario.html"><h2>Registro</h2></a></li>
+				<li><a href="USUARIO.php"><h2>Usuario</h2></a></li>
+				<li><a href="loginUsuario.php"><h2>inicio sesion</h2></a></li>
+				<li><a href="registroUsuario.php"><h2>Registro</h2></a></li>
 			</ul>
 			<img id="img" src="encabezado.png">
 			<div id="title"><h1></h1></div>
@@ -80,8 +80,9 @@
 		<div id="cajon4">
 			<div id="cajon6">
 				<center><input id="buscador" type="search" placeholder="Buscar aqui">
-				<a href="#" id="button">Buscar</a> ¿Que estas buscando?       
-				 <input type="submit" value="Donar" class="button"></center>    
+				<a href="#" id="button">Buscar</a> ¿Que estas buscando?
+
+				 <a href="donarPag.php" class="button">Donar</a></center>    
 			</div>
 
 			<div id="imagen1">

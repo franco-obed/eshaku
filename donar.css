@@ -1,7 +1,6 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	background-color: black;
 }
 
 .nav
@@ -41,17 +40,16 @@
 
 .cajon1
 {
-	margin-top: 20px;
 	margin: auto;
 	width: 600px;
-	height: 150px;
+	height: 350px;
 	background-color: black;
 }
 
 .cajon2
 {
 	width: 350px;
-	height: 80px;
+	height: 100px;
 	background-color: #C7C4C2;
 	margin: auto;
 }
@@ -62,7 +60,7 @@
 	margin: auto;
 	background-color: black;
 	width: 60%;
-	height: 300px;
+	height: 500px;
 
 }
 #encabezado
@@ -73,5 +71,5 @@
 
 .boton1
 {
-	margin-top: 10px;
+	margin-top: ;
 }

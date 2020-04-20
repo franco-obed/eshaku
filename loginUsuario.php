@@ -1,6 +1,5 @@
 <?php
   include_once 'conexion.php';
-  session_start();
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +12,7 @@
   <link rel="stylesheet" href="estilos.css">
    </head>
    <body>
-    <form class="formulario" method="GET" action="login.php" >
+    <form class="formulario" method="POST" action="login.php" >
     
     <h2> Login</h2>
     <div class="contenedor">

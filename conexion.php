@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	$host = "localhost"; 
 	$db = "eshaku"; 
 	$usuario_db = "root"; 

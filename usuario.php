@@ -1,14 +1,15 @@
 <?php
 	include_once 'conexion.php';
-	session_start();
-	if (isset($_GET['email']))
-		{
-			$user = $_GET['email'];
-			$get_user = $mysqli->query("SELECT * FROM usuario WHERE correo = '$user'");
-			if ($get_user->num_rows == 1) {
-			    $profile_data = $get_user->fetch_assoc();
-           }
-       } 
+	$e_mail= $_SESSION['user'];
+	$contra= $_SESSION['pass'];
+	$query= "SELECT * FROM usuario WHERE correo = '$e_mail' AND contrasena = sha('$contra');";
+	$loginQuery= mysqli_query($conexion, $query);
+	$loginQuery_check= mysqli_num_rows($loginQuery);
+	$result= mysqli_fetch_array($loginQuery);
+	//if ($loginQuery_check > 0) {
+	//	$result= mysqli_fetch_array($loginQuery);
+
+	//}
 ?>
 
 <!DOCTYPE html>
@@ -37,9 +38,9 @@
 		</div>
 		<div id="cajon3">
 			<ul id="menu">
-				<li><a href="INDEX.html"><h2>Inicio</h2></a></li>
+				<li><a href="INDEX.php"><h2>Inicio</h2></a></li>
 				<li><a href=""><h2>Usuario</h2></a></li>
-				<li><a href="loginUsuario.html"><h2>Iniciar sesion</h2></a></li>
+				<li><a href="loginUsuario.php"><h2>Iniciar sesion</h2></a></li>
 			</ul>
 			<img id="img" src="encabezado.png">
 			<div id="title"><h1></h1></div>
@@ -52,16 +53,16 @@
 					<nav><center><h1> Detalles:</h1></center></nav>
 					<center>        <table>
                     <tr>                
-                     <td>Nombre:</td><td><?php echo $profile_data['nom_usuario'] ?></td>   
+                     <td>Nombre:</td><td><?php echo $result['nom_usuario']; ?></td>   
                     </tr>
                     <tr>                
-                     <td>Telefono:</td><td><?php echo $profile_data['telefono'] ?></td> 
+                     <td>Telefono:</td><td><?php echo $result['telefono']; ?></td> 
                     </tr> 
                     <tr>
-                        <td>Dirección:</td><td><?php echo $profile_data['direccion'] ?></td>
+                        <td>Dirección:</td><td><?php echo $result['direccion']; ?></td>
                     </tr>
                     <tr>
-                        <td>Correo:</td><td><?php echo $profile_data['correo'] ?></td> 
+                        <td>Correo:</td><td><?php echo $result['correo']; ?></td> 
                     </tr>        
         </table> </center>
 				

@@ -1,5 +1,6 @@
 <?php
   include_once 'conexion.php';
+  session_start();
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +42,7 @@
     <input type="submit" value="Registrarse" class="button">
 
     <p> Al registrarte aceptas las condiciones de uso y política de privacidad de esta pagina</p>
-    <p> ¿Ya tienes cuenta de esta página? <a class="link" href="login e_shaku.html">iniciar Sesión</a></p>
+    <p> ¿Ya tienes cuenta de esta página? <a class="link" href="loginUsuario.php">iniciar Sesión</a></p>
     </div>
   </form>
 </body>
