@@ -1,3 +1,30 @@
+<?php
+include_once('conexion.php');
+$recentPostsQ = mysqli_query($conexion, "SELECT titulo FROM v_recent_posts;");
+$recentPostsRows = mysqli_fetch_assoc($recentPostsQ);
+$recPost1 = $recentPostsRows['titulo'];
+$recentPostsRows = mysqli_fetch_assoc($recentPostsQ);
+$recPost2 = $recentPostsRows['titulo'];
+$recentPostsRows = mysqli_fetch_assoc($recentPostsQ);
+$recPost3 = $recentPostsRows['titulo'];
+
+
+//$recentPostsRows = mysqli_fetch_array($recentPostsQ, MYSQLI_BOTH);
+$recentPostsPicQ = mysqli_query($conexion, "SELECT * FROM v_show_post_pic;");
+while($line = mysqli_fetch_array($recentPostsPicQ, MYSQLI_ASSOC)){
+    $recentPostsPicRows[] = $line;
+}
+//$recentPostsPicRows = mysqli_fetch_array($recentPostsPicQ);
+
+
+
+
+$recPostPic1 = 'archivos/'.implode($recentPostsPicRows[0]);
+$recPostPic2 = 'archivos/'.implode($recentPostsPicRows[1]);
+$recPostPic3 = 'archivos/'.implode($recentPostsPicRows[2]);
+//$recPostFoto1 = $recentPostsRows[0]['imagen'];
+//$recPostPicRoute = 'archivos/'.'$recPostFoto1';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -79,23 +106,34 @@
 
 		<div id="cajon4">
 			<div id="cajon6">
-				<center><input id="buscador" type="search" placeholder="Buscar aqui">
-				<a href="#" id="button">Buscar</a> ¿Que estas buscando?
+				<form class="formulario" action="busqueda.php" method="POST">
+
+				<center><input id="buscador" type="search" placeholder="Buscar aqui"> </center>
+				<button class="button" name="busqueda" type="submit"> Buscar </button>
+			</form>
 
 				 <a href="donar.php" class="button">Donar</a></center>    
 			</div>
+			<center><h1>Recientes</h1></center>
 
 			<div id="imagen1">
-				<center><a href="" type="img">imagen1</a></center>
+				<center> <?php echo "<img src='$recPostPic1' width='320' height='320' id='imagen'>" ?> </center>
+				<center> <?php echo "<h1 class='tituloPost'> Info: $recPost1 </h1>"?> </center>
+
 			</div>
 
-			<center><div id="imagen2">
-				<a href="" type="img">imagen2</a>
-			</div></center>
+			<center> 
+				<div id="imagen2">
+				<center> <?php echo "<img src='$recPostPic2' width='320' height='320' id='imagen'>" ?> </center>
+				<center> <?php echo "<h1 class='tituloPost'> Info: $recPost2 </h1>"?> </center>
+			</div>
+			</center>
 
 			<div id="imagen3">
-				<center><a href="" type="img">imagen3</a></center>
+				<center> <?php echo "<img src='$recPostPic3' width='320' height='320' id='imagen'>" ?> </center>
+				<center> <?php echo "<h1 class='tituloPost'> Info: $recPost3 </h1>"?> </center>
 			</div>
+		</div>
 
 
 			
