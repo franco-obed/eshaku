@@ -225,7 +225,7 @@ CREATE TABLE `prenda` (
   PRIMARY KEY (`id`),
   KEY `prenda_usuario_idx` (`id_usuario`),
   CONSTRAINT `prenda_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -234,7 +234,7 @@ CREATE TABLE `prenda` (
 
 LOCK TABLES `prenda` WRITE;
 /*!40000 ALTER TABLE `prenda` DISABLE KEYS */;
-INSERT INTO `prenda` VALUES (38,'playera','cliff.jpg','es tan poderoso que no puedo controlarlo, se llama golden experience, es buen pedo','usada','mediana','mujer','2020-04-23 00:34:48',25,'se regala stand porque ya no lo quiero'),(39,'playera','cancun.jpg','desc','nueva','pequena','mujer','2020-04-23 00:49:51',21,'fotito');
+INSERT INTO `prenda` VALUES (38,'playera','cliff.jpg','es tan poderoso que no puedo controlarlo, se llama golden experience, es buen pedo','usada','mediana','mujer','2020-04-23 00:34:48',25,'se regala stand porque ya no lo quiero'),(39,'playera','cancun.jpg','desc','nueva','pequena','mujer','2020-04-23 00:49:51',21,'fotito'),(40,'zapatos','mads-mikkelsen-death-stranding-kojima-productions.png','esta bastante desgastada','usada','pequena','ninos','2020-04-23 06:40:13',21,'pnatalonera');
 /*!40000 ALTER TABLE `prenda` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -302,7 +302,7 @@ CREATE TABLE `prenda_log` (
 
 LOCK TABLES `prenda_log` WRITE;
 /*!40000 ALTER TABLE `prenda_log` DISABLE KEYS */;
-INSERT INTO `prenda_log` VALUES ('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY');
+INSERT INTO `prenda_log` VALUES ('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY');
 /*!40000 ALTER TABLE `prenda_log` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -357,7 +357,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (3,'asdfasdf','f9cc9633722439fe1eb542ce08208b403c84386d','1234567890','dsfsdff','sdfasdfsfd',NULL),(5,'','da39a3ee5e6b4b0d3255bfef95601890afd80709','','','',NULL),(6,'asdasdasd','00ea1da4192a2030f9ae023de3b3143ed647bbab','213123','`12`12','asdasd',NULL),(7,'ivan terrible','7e329e20abf37b8c28b9df5e367aaad234a3f43f','6146666666','pepe_valedor','calle pelicano numero 10',NULL),(8,'ivan terrible','e43ae9ac93ed9965464abf23f4e9ad722d31097e','6146666666','calle pelicano numero 10','ivan_fortnite@selena.com',NULL),(9,'asdfasdf','f9cc9633722439fe1eb542ce08208b403c84386d','1234567890','dsfsdff','sdfasdfsfd',NULL),(10,'obedsito bebe','4482f9df65598314be2235041df882c7231d1ea9','1234567890','ay no se donde vivo','oli@jotmail.com',NULL),(11,'','da39a3ee5e6b4b0d3255bfef95601890afd80709','','','',NULL),(12,'obed','8cb2237d0679ca88db6464eac60da96345513964','1234567890','askfjfh 12','ofranco@gmail.com',NULL),(13,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(14,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(15,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(16,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(17,'ivan','a15f8b81a160b4eebe5c84e9e3b65c87b9b2f18e','1234567890','alamedas 69','ivan@hotmail.es',NULL),(18,'profe barroso','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','alamedas','pbarroso@gmail.com',NULL),(20,'hey','7f550a9f4c44173a37664d938f1355f0f92a47a7','123 1s st','123456789','franco@gmail.com',NULL),(21,'hola','5956a2b28d94d410706abe8c24e341ac947d4cb1','1234567890','123 1st st','hola','josuque.jpg'),(22,'zuriel','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','123456789','123 1st st','123@gmail.com',NULL),(23,'obed','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test@test.com',NULL),(24,'isaac','dc76e9f0c0006e8f919e0c515c66dbba3982f785','1234567890','planeta tierra','ipena@gmail.com',NULL),(25,'giorno giovana','798a5bf5095b8e687bbc01d8a448b0dc0a1e9e82','6144083165','kakyoin st, florencia, IT','giogio@jpose.com','kikojojo.jpg');
+INSERT INTO `usuario` VALUES (3,'asdfasdf','f9cc9633722439fe1eb542ce08208b403c84386d','1234567890','dsfsdff','sdfasdfsfd',NULL),(5,'','da39a3ee5e6b4b0d3255bfef95601890afd80709','','','',NULL),(6,'asdasdasd','00ea1da4192a2030f9ae023de3b3143ed647bbab','213123','`12`12','asdasd',NULL),(7,'ivan terrible','7e329e20abf37b8c28b9df5e367aaad234a3f43f','6146666666','pepe_valedor','calle pelicano numero 10',NULL),(8,'ivan terrible','e43ae9ac93ed9965464abf23f4e9ad722d31097e','6146666666','calle pelicano numero 10','ivan_fortnite@selena.com',NULL),(9,'asdfasdf','f9cc9633722439fe1eb542ce08208b403c84386d','1234567890','dsfsdff','sdfasdfsfd',NULL),(10,'obedsito bebe','4482f9df65598314be2235041df882c7231d1ea9','1234567890','ay no se donde vivo','oli@jotmail.com',NULL),(11,'','da39a3ee5e6b4b0d3255bfef95601890afd80709','','','',NULL),(12,'obed','8cb2237d0679ca88db6464eac60da96345513964','1234567890','askfjfh 12','ofranco@gmail.com',NULL),(13,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(14,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(15,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(16,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(17,'ivan','a15f8b81a160b4eebe5c84e9e3b65c87b9b2f18e','1234567890','alamedas 69','ivan@hotmail.es',NULL),(18,'profe barroso','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','alamedas','pbarroso@gmail.com',NULL),(20,'hey','7f550a9f4c44173a37664d938f1355f0f92a47a7','123 1s st','123456789','franco@gmail.com',NULL),(21,'hola','5956a2b28d94d410706abe8c24e341ac947d4cb1','1234567890','123 1st st','hola','kikojojo.jpg'),(22,'zuriel','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','123456789','123 1st st','123@gmail.com',NULL),(23,'obed','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test@test.com',NULL),(24,'isaac','dc76e9f0c0006e8f919e0c515c66dbba3982f785','1234567890','planeta tierra','ipena@gmail.com',NULL),(25,'giorno giovana','798a5bf5095b8e687bbc01d8a448b0dc0a1e9e82','6144083165','kakyoin st, florencia, IT','giogio@jpose.com','kikojojo.jpg');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -425,9 +425,513 @@ CREATE TABLE `usuario_log` (
 
 LOCK TABLES `usuario_log` WRITE;
 /*!40000 ALTER TABLE `usuario_log` DISABLE KEYS */;
-INSERT INTO `usuario_log` VALUES ('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY');
+INSERT INTO `usuario_log` VALUES ('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY');
 /*!40000 ALTER TABLE `usuario_log` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Temporary view structure for view `v_h_abrigo`
+--
+
+DROP TABLE IF EXISTS `v_h_abrigo`;
+/*!50001 DROP VIEW IF EXISTS `v_h_abrigo`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_h_abrigo` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_h_camisa`
+--
+
+DROP TABLE IF EXISTS `v_h_camisa`;
+/*!50001 DROP VIEW IF EXISTS `v_h_camisa`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_h_camisa` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_h_pantalon`
+--
+
+DROP TABLE IF EXISTS `v_h_pantalon`;
+/*!50001 DROP VIEW IF EXISTS `v_h_pantalon`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_h_pantalon` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_h_pantalonera`
+--
+
+DROP TABLE IF EXISTS `v_h_pantalonera`;
+/*!50001 DROP VIEW IF EXISTS `v_h_pantalonera`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_h_pantalonera` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_h_playera`
+--
+
+DROP TABLE IF EXISTS `v_h_playera`;
+/*!50001 DROP VIEW IF EXISTS `v_h_playera`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_h_playera` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_h_tenis`
+--
+
+DROP TABLE IF EXISTS `v_h_tenis`;
+/*!50001 DROP VIEW IF EXISTS `v_h_tenis`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_h_tenis` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_h_uniforme`
+--
+
+DROP TABLE IF EXISTS `v_h_uniforme`;
+/*!50001 DROP VIEW IF EXISTS `v_h_uniforme`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_h_uniforme` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_h_zapatos`
+--
+
+DROP TABLE IF EXISTS `v_h_zapatos`;
+/*!50001 DROP VIEW IF EXISTS `v_h_zapatos`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_h_zapatos` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_m_abrigo`
+--
+
+DROP TABLE IF EXISTS `v_m_abrigo`;
+/*!50001 DROP VIEW IF EXISTS `v_m_abrigo`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_m_abrigo` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_m_camisa`
+--
+
+DROP TABLE IF EXISTS `v_m_camisa`;
+/*!50001 DROP VIEW IF EXISTS `v_m_camisa`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_m_camisa` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_m_pantalon`
+--
+
+DROP TABLE IF EXISTS `v_m_pantalon`;
+/*!50001 DROP VIEW IF EXISTS `v_m_pantalon`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_m_pantalon` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_m_pantalonera`
+--
+
+DROP TABLE IF EXISTS `v_m_pantalonera`;
+/*!50001 DROP VIEW IF EXISTS `v_m_pantalonera`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_m_pantalonera` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_m_playera`
+--
+
+DROP TABLE IF EXISTS `v_m_playera`;
+/*!50001 DROP VIEW IF EXISTS `v_m_playera`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_m_playera` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_m_tenis`
+--
+
+DROP TABLE IF EXISTS `v_m_tenis`;
+/*!50001 DROP VIEW IF EXISTS `v_m_tenis`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_m_tenis` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_m_uniforme`
+--
+
+DROP TABLE IF EXISTS `v_m_uniforme`;
+/*!50001 DROP VIEW IF EXISTS `v_m_uniforme`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_m_uniforme` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_m_zapatos`
+--
+
+DROP TABLE IF EXISTS `v_m_zapatos`;
+/*!50001 DROP VIEW IF EXISTS `v_m_zapatos`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_m_zapatos` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_n_abrigo`
+--
+
+DROP TABLE IF EXISTS `v_n_abrigo`;
+/*!50001 DROP VIEW IF EXISTS `v_n_abrigo`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_n_abrigo` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_n_camisa`
+--
+
+DROP TABLE IF EXISTS `v_n_camisa`;
+/*!50001 DROP VIEW IF EXISTS `v_n_camisa`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_n_camisa` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_n_pantalon`
+--
+
+DROP TABLE IF EXISTS `v_n_pantalon`;
+/*!50001 DROP VIEW IF EXISTS `v_n_pantalon`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_n_pantalon` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_n_pantalonera`
+--
+
+DROP TABLE IF EXISTS `v_n_pantalonera`;
+/*!50001 DROP VIEW IF EXISTS `v_n_pantalonera`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_n_pantalonera` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_n_playera`
+--
+
+DROP TABLE IF EXISTS `v_n_playera`;
+/*!50001 DROP VIEW IF EXISTS `v_n_playera`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_n_playera` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_n_tenis`
+--
+
+DROP TABLE IF EXISTS `v_n_tenis`;
+/*!50001 DROP VIEW IF EXISTS `v_n_tenis`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_n_tenis` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_n_uniforme`
+--
+
+DROP TABLE IF EXISTS `v_n_uniforme`;
+/*!50001 DROP VIEW IF EXISTS `v_n_uniforme`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_n_uniforme` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_n_zapatos`
+--
+
+DROP TABLE IF EXISTS `v_n_zapatos`;
+/*!50001 DROP VIEW IF EXISTS `v_n_zapatos`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_n_zapatos` AS SELECT 
+ 1 AS `id`,
+ 1 AS `tipo`,
+ 1 AS `imagen`,
+ 1 AS `descripcion`,
+ 1 AS `estado`,
+ 1 AS `talla`,
+ 1 AS `genero`,
+ 1 AS `fecha`,
+ 1 AS `id_usuario`,
+ 1 AS `titulo`*/;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Temporary view structure for view `v_profile`
@@ -454,8 +958,20 @@ SET @saved_cs_client     = @@character_set_client;
 /*!50503 SET character_set_client = utf8mb4 */;
 /*!50001 CREATE VIEW `v_recent_posts` AS SELECT 
  1 AS `titulo`,
- 1 AS `descr`,
+ 1 AS `descripcion`,
  1 AS `fecha`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `v_show_post_pic`
+--
+
+DROP TABLE IF EXISTS `v_show_post_pic`;
+/*!50001 DROP VIEW IF EXISTS `v_show_post_pic`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `v_show_post_pic` AS SELECT 
+ 1 AS `imagen`*/;
 SET character_set_client = @saved_cs_client;
 
 --
@@ -574,6 +1090,438 @@ DELIMITER ;
 /*!50003 SET collation_connection  = @saved_col_connection */ ;
 
 --
+-- Final view structure for view `v_h_abrigo`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_h_abrigo`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_h_abrigo` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'hombre') and (`prenda`.`tipo` = 'abrigo')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_h_camisa`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_h_camisa`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_h_camisa` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'Hombre') and (`prenda`.`tipo` = 'camisa')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_h_pantalon`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_h_pantalon`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_h_pantalon` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'hombre') and (`prenda`.`tipo` = 'pantalon')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_h_pantalonera`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_h_pantalonera`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_h_pantalonera` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'hombre') and (`prenda`.`tipo` = 'pantalonera')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_h_playera`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_h_playera`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_h_playera` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'Hombre') and (`prenda`.`tipo` = 'Playera')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_h_tenis`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_h_tenis`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_h_tenis` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'hombre') and (`prenda`.`tipo` = 'tenis')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_h_uniforme`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_h_uniforme`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_h_uniforme` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'Hombre') and (`prenda`.`tipo` = 'uniforme')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_h_zapatos`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_h_zapatos`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_h_zapatos` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'hombre') and (`prenda`.`tipo` = 'zapatos')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_m_abrigo`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_m_abrigo`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_m_abrigo` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'mujer') and (`prenda`.`tipo` = 'abrigo')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_m_camisa`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_m_camisa`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_m_camisa` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'mujer') and (`prenda`.`tipo` = 'camisa')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_m_pantalon`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_m_pantalon`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_m_pantalon` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'mujer') and (`prenda`.`tipo` = 'pantalon')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_m_pantalonera`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_m_pantalonera`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_m_pantalonera` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'mujer') and (`prenda`.`tipo` = 'pantalonera')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_m_playera`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_m_playera`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_m_playera` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'Mujer') and (`prenda`.`tipo` = 'playera')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_m_tenis`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_m_tenis`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_m_tenis` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'mujer') and (`prenda`.`tipo` = 'tenis')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_m_uniforme`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_m_uniforme`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_m_uniforme` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'mujer') and (`prenda`.`tipo` = 'uniforme')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_m_zapatos`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_m_zapatos`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_m_zapatos` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'mujer') and (`prenda`.`tipo` = 'zapatos')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_n_abrigo`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_n_abrigo`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_n_abrigo` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'ninoos') and (`prenda`.`tipo` = 'abrigo')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_n_camisa`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_n_camisa`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_n_camisa` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'ninos') and (`prenda`.`tipo` = 'camisa')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_n_pantalon`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_n_pantalon`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_n_pantalon` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'ninos') and (`prenda`.`tipo` = 'pantalon')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_n_pantalonera`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_n_pantalonera`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_n_pantalonera` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'ninos') and (`prenda`.`tipo` = 'pantalonera')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_n_playera`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_n_playera`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_n_playera` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'ninos') and (`prenda`.`tipo` = 'playera')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_n_tenis`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_n_tenis`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_n_tenis` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'ninos') and (`prenda`.`tipo` = 'tenis')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_n_uniforme`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_n_uniforme`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_n_uniforme` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'ninos') and (`prenda`.`tipo` = 'uniforme')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_n_zapatos`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_n_zapatos`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_n_zapatos` AS select `prenda`.`id` AS `id`,`prenda`.`tipo` AS `tipo`,`prenda`.`imagen` AS `imagen`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`estado` AS `estado`,`prenda`.`talla` AS `talla`,`prenda`.`genero` AS `genero`,`prenda`.`fecha` AS `fecha`,`prenda`.`id_usuario` AS `id_usuario`,`prenda`.`titulo` AS `titulo` from `prenda` where ((`prenda`.`genero` = 'ninos') and (`prenda`.`tipo` = 'zapatos')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
 -- Final view structure for view `v_profile`
 --
 
@@ -604,7 +1552,25 @@ DELIMITER ;
 /*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
-/*!50001 VIEW `v_recent_posts` AS select `post`.`titulo` AS `titulo`,`post`.`descr` AS `descr`,`post`.`fecha` AS `fecha` from `post` order by `post`.`fecha` limit 3 */;
+/*!50001 VIEW `v_recent_posts` AS select `prenda`.`titulo` AS `titulo`,`prenda`.`descripcion` AS `descripcion`,`prenda`.`fecha` AS `fecha` from `prenda` order by `prenda`.`fecha` limit 3 */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `v_show_post_pic`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_show_post_pic`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_show_post_pic` AS select `prenda`.`imagen` AS `imagen` from `prenda` order by `prenda`.`fecha` desc limit 3 */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
 /*!50001 SET collation_connection      = @saved_col_connection */;
@@ -618,4 +1584,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-04-23  1:35:39
+-- Dump completed on 2020-04-23 16:01:39
