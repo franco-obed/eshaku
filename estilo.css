@@ -200,6 +200,7 @@
 #cajon4 #imagen1 
 {
 	background-color: black;
+	color: white;
 	width: 333px;
 	height: 520px;
 	float: left;
@@ -211,7 +212,7 @@
 	background-color: black;
 	width: 333px;
 	height: 520px;
-	float: left;
+	float: center;
 
 }
 #cajon4 #imagen3
@@ -219,6 +220,10 @@
 	background-color: black;
 	width: 333px;
 	height: 520px;
-	float: left;
+	float: right;
+	clear: both;
 
+}
+h1 {
+	color: white;
 }
