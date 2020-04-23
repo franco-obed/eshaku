@@ -1,3 +1,9 @@
+<?php
+include_once ("conexion.php");
+$busqueda = $_SESSION['busqueda'];
+$busqueda = '%'.$busqueda.'%';
+$busquery = "SELECT * FROM prenda WHERE tipo LIKE '$busqueda' OR descripcion LIKE '$busqueda' OR titulo LIKE '$busqueda' LIMIT 6;";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +18,7 @@
 			<ul id="menu">
 				<li><a href="INDEX.php"><h3>Inicio</h3></a></li>
 				<li><a href="USUARIO.PHP">Usuario<h3></h3></a></li>
-				<li><a href=""><h3>Cerrar Sesion</h3></a></li>
+				<li><a href="cerrar_sesion.php"><h3>Cerrar Sesion</h3></a></li>
 			</ul>
 		
 	</nav>
