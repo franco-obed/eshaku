@@ -213,14 +213,19 @@ DROP TABLE IF EXISTS `prenda`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `prenda` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `tipo` varchar(20) NOT NULL,
-  `imagen` varchar(255) NOT NULL,
-  `descripcion` varchar(100) NOT NULL,
-  `estado` varchar(15) NOT NULL,
-  `talla` varchar(10) NOT NULL,
-  `genero` varchar(10) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `tipo` varchar(20) DEFAULT NULL,
+  `imagen` varchar(255) DEFAULT NULL,
+  `descripcion` varchar(100) DEFAULT NULL,
+  `estado` varchar(15) DEFAULT NULL,
+  `talla` varchar(10) DEFAULT NULL,
+  `genero` varchar(10) DEFAULT NULL,
+  `fecha` datetime DEFAULT NULL,
+  `id_usuario` int DEFAULT NULL,
+  `titulo` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `prenda_usuario_idx` (`id_usuario`),
+  CONSTRAINT `prenda_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -229,6 +234,7 @@ CREATE TABLE `prenda` (
 
 LOCK TABLES `prenda` WRITE;
 /*!40000 ALTER TABLE `prenda` DISABLE KEYS */;
+INSERT INTO `prenda` VALUES (38,'playera','cliff.jpg','es tan poderoso que no puedo controlarlo, se llama golden experience, es buen pedo','usada','mediana','mujer','2020-04-23 00:34:48',25,'se regala stand porque ya no lo quiero'),(39,'playera','cancun.jpg','desc','nueva','pequena','mujer','2020-04-23 00:49:51',21,'fotito');
 /*!40000 ALTER TABLE `prenda` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -296,6 +302,7 @@ CREATE TABLE `prenda_log` (
 
 LOCK TABLES `prenda_log` WRITE;
 /*!40000 ALTER TABLE `prenda_log` DISABLE KEYS */;
+INSERT INTO `prenda_log` VALUES ('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY');
 /*!40000 ALTER TABLE `prenda_log` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -341,7 +348,7 @@ CREATE TABLE `usuario` (
   `foto` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id_usuario`),
   KEY `index_id_nombre` (`id_usuario`,`nom_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -350,7 +357,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (3,'asdfasdf','f9cc9633722439fe1eb542ce08208b403c84386d','1234567890','dsfsdff','sdfasdfsfd',NULL),(5,'','da39a3ee5e6b4b0d3255bfef95601890afd80709','','','',NULL),(6,'asdasdasd','00ea1da4192a2030f9ae023de3b3143ed647bbab','213123','`12`12','asdasd',NULL),(7,'ivan terrible','7e329e20abf37b8c28b9df5e367aaad234a3f43f','6146666666','pepe_valedor','calle pelicano numero 10',NULL),(8,'ivan terrible','e43ae9ac93ed9965464abf23f4e9ad722d31097e','6146666666','calle pelicano numero 10','ivan_fortnite@selena.com',NULL),(9,'asdfasdf','f9cc9633722439fe1eb542ce08208b403c84386d','1234567890','dsfsdff','sdfasdfsfd',NULL),(10,'obedsito bebe','4482f9df65598314be2235041df882c7231d1ea9','1234567890','ay no se donde vivo','oli@jotmail.com',NULL),(11,'','da39a3ee5e6b4b0d3255bfef95601890afd80709','','','',NULL),(12,'obed','8cb2237d0679ca88db6464eac60da96345513964','1234567890','askfjfh 12','ofranco@gmail.com',NULL),(13,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(14,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(15,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(16,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(17,'ivan','a15f8b81a160b4eebe5c84e9e3b65c87b9b2f18e','1234567890','alamedas 69','ivan@hotmail.es',NULL),(18,'profe barroso','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','alamedas','pbarroso@gmail.com',NULL),(20,'hey','7f550a9f4c44173a37664d938f1355f0f92a47a7','123 1s st','123456789','franco@gmail.com',NULL),(21,'hola','5956a2b28d94d410706abe8c24e341ac947d4cb1','1234567890','123 1st st','hola',NULL);
+INSERT INTO `usuario` VALUES (3,'asdfasdf','f9cc9633722439fe1eb542ce08208b403c84386d','1234567890','dsfsdff','sdfasdfsfd',NULL),(5,'','da39a3ee5e6b4b0d3255bfef95601890afd80709','','','',NULL),(6,'asdasdasd','00ea1da4192a2030f9ae023de3b3143ed647bbab','213123','`12`12','asdasd',NULL),(7,'ivan terrible','7e329e20abf37b8c28b9df5e367aaad234a3f43f','6146666666','pepe_valedor','calle pelicano numero 10',NULL),(8,'ivan terrible','e43ae9ac93ed9965464abf23f4e9ad722d31097e','6146666666','calle pelicano numero 10','ivan_fortnite@selena.com',NULL),(9,'asdfasdf','f9cc9633722439fe1eb542ce08208b403c84386d','1234567890','dsfsdff','sdfasdfsfd',NULL),(10,'obedsito bebe','4482f9df65598314be2235041df882c7231d1ea9','1234567890','ay no se donde vivo','oli@jotmail.com',NULL),(11,'','da39a3ee5e6b4b0d3255bfef95601890afd80709','','','',NULL),(12,'obed','8cb2237d0679ca88db6464eac60da96345513964','1234567890','askfjfh 12','ofranco@gmail.com',NULL),(13,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(14,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(15,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(16,'test','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test',NULL),(17,'ivan','a15f8b81a160b4eebe5c84e9e3b65c87b9b2f18e','1234567890','alamedas 69','ivan@hotmail.es',NULL),(18,'profe barroso','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','alamedas','pbarroso@gmail.com',NULL),(20,'hey','7f550a9f4c44173a37664d938f1355f0f92a47a7','123 1s st','123456789','franco@gmail.com',NULL),(21,'hola','5956a2b28d94d410706abe8c24e341ac947d4cb1','1234567890','123 1st st','hola','josuque.jpg'),(22,'zuriel','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','123456789','123 1st st','123@gmail.com',NULL),(23,'obed','a94a8fe5ccb19ba61c4c0873d391e987982fbbd3','1234567890','test','test@test.com',NULL),(24,'isaac','dc76e9f0c0006e8f919e0c515c66dbba3982f785','1234567890','planeta tierra','ipena@gmail.com',NULL),(25,'giorno giovana','798a5bf5095b8e687bbc01d8a448b0dc0a1e9e82','6144083165','kakyoin st, florencia, IT','giogio@jpose.com','kikojojo.jpg');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -418,7 +425,7 @@ CREATE TABLE `usuario_log` (
 
 LOCK TABLES `usuario_log` WRITE;
 /*!40000 ALTER TABLE `usuario_log` DISABLE KEYS */;
-INSERT INTO `usuario_log` VALUES ('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','INSERTED ENTRY');
+INSERT INTO `usuario_log` VALUES ('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','DELETED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','INSERTED ENTRY'),('root@localhost','UPDATED ENTRY'),('root@localhost','UPDATED ENTRY');
 /*!40000 ALTER TABLE `usuario_log` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -483,6 +490,26 @@ DELIMITER ;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_register_user`(IN user_name varchar(64), IN passwd varchar(64), IN address varchar(100), IN ph_number varchar(10), IN email varchar(100))
 BEGIN INSERT INTO usuario (nom_usuario, contrasena, direccion, telefono, correo) VALUES(user_name, sha(passwd), address, ph_number, email); END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_search` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_search`(keyword VARCHAR(255))
+BEGIN
+
+SELECT tipo, imagen, descripcion, titulo FROM prenda WHERE titulo LIKE keyword OR descripcion LIKE keyword;
+END ;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
@@ -591,4 +618,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-04-20  8:21:32
+-- Dump completed on 2020-04-23  1:35:39
