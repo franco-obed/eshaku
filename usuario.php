@@ -40,7 +40,7 @@
 			<ul id="menu">
 				<li><a href="INDEX.php"><h2>Inicio</h2></a></li>
 				<li><a href=""><h2>Usuario</h2></a></li>
-				<li><a href="loginUsuario.php"><h2>Iniciar sesion</h2></a></li>
+				<li><a href="post.php"><h2>Publicacion</h2></a></li>
 			</ul>
 			<img id="img" src="encabezado.png">
 			<div id="title"><h1></h1></div>
