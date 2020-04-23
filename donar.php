@@ -2,30 +2,9 @@
   include_once 'conexion.php'; 
   $e_mail= $_SESSION['user'];
   $contra= $_SESSION['pass'];
-
-
-  $formatos = array('.jpg', '.png');
-  if (isset($_POST['boton'])) {
-  	$nombreArchivo = $_FILES['archivo']['name'];
-  	$nombreTmpArchivo = $_FILES['archivo']['tmp_name'];
-  	$ext = substr($nombreArchivo, strrpos($nombreArchivo, '.'));
-  	if (in_array($ext, $formatos)){
-  		if (move_uploaded_file($nombreTmpArchivo, "archivos/$nombreArchivo")){
-  			mysqli_query($conexion, "INSERT INTO prenda (foto) VALUES ('$nombreArchivo');");
-  			echo "<script type='text/javascript'>
-			alert('Se ha subido exitosamente, ahora, introduzca la informacion de la prenda');
-			</script>";
-  			}else{
-  				echo "ocurrio un Error";
-
-  			}
-
-
-  	}else{
-  		echo "Lo sentimos, no se permite este archivo";
-
-  	}
-  }
+  $query4Id = mysqli_query($conexion, "SELECT id_usuario FROM usuario WHERE correo = '$e_mail';");
+  $arrayUserId = mysqli_fetch_assoc($query4Id);
+  $userId = $arrayUserId['id_usuario'];
 
 ?>
 
@@ -43,14 +22,14 @@
 			<ul id="menu">
 				<li><a href="INDEX.php"><h3>Inicio</h3></a></li>
 				<li><a href="usuario.php"><h3>Usuario</h3></a></li>
-				<li><a href=""><h3>Cerrar Sesion</h3></a></li>
+				<li><a href="cerrar_sesion.php"><h3>Cerrar Sesion</h3></a></li>
 			</ul>
 		
 	</nav>
 	<br><br>
 
 	<div class="cajon1">
-		<form method="post" action="" enctype="multipart/form-data">
+		<form method="post" action="post_descr.php" enctype="multipart/form-data">
 			<center><h1 id="encabezado">¿Que quieres Donar?</h1></center>
 			<br>
 
@@ -58,9 +37,9 @@
 
 				<input class="boton1" type="file" name="archivo" />
 			    <br>
-			    <input type="id" placeholder="titulo de publicacion" name="#">
+			    <input type="id" placeholder="titulo de publicacion" name="post_title">
 			    <br>
-			    <input type="id" placeholder="descripcion" name="#">
+			    <input type="id" placeholder="descripcion" name="post_descr">
 			    <br>
 			    
 			    <br>
