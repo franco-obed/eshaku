@@ -6,6 +6,11 @@
 	$loginQuery= mysqli_query($conexion, $query);
 	$loginQuery_check= mysqli_num_rows($loginQuery);
 	$result= mysqli_fetch_array($loginQuery);
+	$picQ = mysqli_query($conexion, "SELECT foto from usuario WHERE correo = '$e_mail';");
+    $picRow = mysqli_fetch_assoc($picQ);
+    $picRoute = $picRow['foto'];
+    $picRoute = 'archivos/'.$picRoute;
+	//$profilePicQ = mysqli_query("SELECT ");
 	//if ($loginQuery_check > 0) {
 	//	$result= mysqli_fetch_array($loginQuery);
 
@@ -69,8 +74,11 @@
 			    </div>
 
 			    <div id="cajon7usuario">
-			    	<center><img src="C:\xampp\htdocs\integradora\usuarios\img\isaac.jpg" width="320" height="320" id="imagen"></center>
-			    	
+			    	<center> <?php echo "<img src='$picRoute' width='320' height='320' id='imagen'>" ?></center>
+			    	<form action="upload.php" method="post" enctype="multipart/form-data">
+			    		<input type="file" name="archivoSubir" id="fotoPerfil">
+			    		<input type="submit" value="Cambiar foto de perfil" name="boton">
+			    	</form>
 			    </div>
 			</div>
 		</div>
