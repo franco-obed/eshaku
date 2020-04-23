@@ -57,9 +57,9 @@
 			</div>
 
 			<div id="cajon7">
-				<center><div><h2>¿Que siginifica E_shaku?</h2></div><br /></center>
-				<center><h3>Es una ligera inclinacion de la caveza, que se llama reverencia.<br />
-				<br> Así, una reverencia nos puede servir para saludar a un amigo, a un compañero de trabajo, para agradecer algo, para pedir disculpas o para solicitar algo difícil de conseguir.</h3></center>
+				<center><div><h2>¿Que siginifica "eshaku"?</h2></div><br /></center>
+				<center><h3>Es una ligera inclinacion de la cabeza, una reverencia.<br />
+				<br> Así, esta nos puede servir para saludar a un amigo, a un compañero de trabajo, para agradecer algo, para pedir disculpas o para solicitar algo difícil de conseguir.</h3></center>
 				
 			</div>
 
