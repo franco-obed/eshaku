@@ -29,7 +29,7 @@
     
     <input type="submit" value="Login" class="button">
     <p> Al registrarte aceptas las condiciones de uso y política de privacidad de esta pagina</p>
-    <p> ¿No tienes una cuenta de esta página? <a class="link" href="registroUsuario.html">Créala</a></p><p>Volver a la pagina principal<a class="link" href="INDEX.html"> Volver</a>
+    <p> ¿No tienes una cuenta de esta página? <a class="link" href="registroUsuario.php">Créala</a></p><p>Volver a la pagina principal<a class="link" href="INDEX.php"> Volver</a>
   </form>
 
 
