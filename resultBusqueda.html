@@ -3,6 +3,9 @@ include_once ("conexion.php");
 $busqueda = $_SESSION['busqueda'];
 $busqueda = '%'.$busqueda.'%';
 $busquery = "SELECT * FROM prenda WHERE tipo LIKE '$busqueda' OR descripcion LIKE '$busqueda' OR titulo LIKE '$busqueda' LIMIT 6;";
+$resultado = mysqli_query($conexion, $busquery);
+$resArray = msqyli_fetch_assoc($resultado);
+$res = $resArray ['tipo'];
 ?>
 <!DOCTYPE html>
 <html>
