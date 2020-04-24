@@ -3,7 +3,7 @@ include_once('conexion.php');
 $e_mail= $_SESSION['user'];
 $contra= $_SESSION['pass'];
 $lastPostId = $_SESSION['last_post'];
-$lastPostTableQ = mysqli_query($conexion, "SELECT * FROM prenda WHERE id = '$lastPostId';");
+$lastPostTableQ = mysqli_query($conexion, "SELECT titulo, fecha, tipo, descripcion, estado, talla, genero, telefono FROM prenda INNER JOIN usuario WHERE id = '$lastPostId';");
 $tableLastPost = mysqli_fetch_assoc($lastPostTableQ);
 $postPicQ = mysqli_query($conexion, "SELECT imagen from prenda WHERE id = '$lastPostId';");
 $postPicRow = mysqli_fetch_assoc($postPicQ);
@@ -61,6 +61,9 @@ $postPicRoute = 'archivos/'.$postPicRoute;
                     </tr>  
                     <tr>
                         <td>Genero: </td><td><?php echo $tableLastPost['genero']; ?></td> 
+                    </tr>
+                    <tr>
+                        <td>Contacto	: </td><td><?php echo $tableLastPost['telefono']; ?></td> 
                     </tr>
 			</article>
 		</div>
