@@ -118,20 +118,20 @@ $recPostPic3 = 'archivos/'.implode($recentPostsPicRows[2]);
 
 			<div id="imagen1">
 				<center> <?php echo "<img src='$recPostPic1' width='320' height='320' id='imagen'>" ?> </center>
-				<center> <?php echo "<h1 class='tituloPost'> Info: $recPost1 </h1>"?> </center>
+				<center> <?php echo "<h1 class='tituloPost'> $recPost1 </h1>"?> </center>
 
 			</div>
 
 			<center> 
 				<div id="imagen2">
 				<center> <?php echo "<img src='$recPostPic2' width='320' height='320' id='imagen'>" ?> </center>
-				<center> <?php echo "<h1 class='tituloPost'> Info: $recPost2 </h1>"?> </center>
+				<center> <?php echo "<h1 class='tituloPost'> $recPost2 </h1>"?> </center>
 			</div>
 			</center>
 
 			<div id="imagen3">
 				<center> <?php echo "<img src='$recPostPic3' width='320' height='320' id='imagen'>" ?> </center>
-				<center> <?php echo "<h1 class='tituloPost'> Info: $recPost3 </h1>"?> </center>
+				<center> <?php echo "<h1 class='tituloPost'> $recPost3 </h1>"?> </center>
 			</div>
 		</div>
 
